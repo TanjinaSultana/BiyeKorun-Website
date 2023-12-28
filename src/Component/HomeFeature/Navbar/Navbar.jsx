@@ -91,7 +91,7 @@ const Navbar = () => {
 </div>
         </div>
         <div className='bg-[#F5F5F5] h-auto lg:h-[110px] w-auto mx-auto  md:w-2/3 md:mx-0 lg:lg:w-[1200px] '>
-    <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 w-0 mx-0 lg:w-[1000px] lg:mx-auto'>
+    <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-5 w-0 mx-0 lg:w-[1000px] lg:mx-auto'>
         {/* dashboard */}
         <div className='w-[156px] h-[50px]  rounded-lg bg-[#FFFFFF] mr-[30px]  flex my-[30px]'>
                      <div className='flex py-3 px-5 gap-2'>
