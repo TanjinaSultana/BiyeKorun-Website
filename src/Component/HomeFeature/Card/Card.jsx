@@ -9,9 +9,9 @@ import ellipseImage from '../../../../public/image/Ellipse 1966.svg'
 const Card = () => {
     return (
         <div className='w-auto md:w-2/3 md:mx-0 mx-auto lg:w-[1180px] mx-auto h-full lg:h-[874px] bg-[#F5F5F5] mt-[30px] flex '>
-        <div className='m-[30px] '>
+        <div className='m-[20px] lg:m-[30px] '>
             {/* subheader and search option */}
-        <div className='flex flex-col lg:flex-row w-[1120px]  justify-between'>
+        <div className='flex flex-col lg:flex-row lg:w-[1120px] w-0  justify-between'>
   <div className='justify-start'>
     <h1 className='font-medium text-sm text-[#F42A41]'>Discover</h1>
     <h1 className='font-semibold text-base mt-[18px]'>Potential Partner</h1>
@@ -28,10 +28,10 @@ const Card = () => {
 {/* card  */}
 
 
-<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3  mt-[15px]'>
+<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3  mt-[15px] w-auto mx-auto'>
 {/* row-1 */}
     {/* col-1 */}
-<div className='w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
+<div className='w-[320px] lg:w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
@@ -94,7 +94,7 @@ const Card = () => {
 </div>
 </div>
 {/* col-2 */}
-<div className='w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
+<div className='w-[320px] lg:w-[353px]h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
@@ -157,7 +157,7 @@ const Card = () => {
 </div>
 </div>
 {/* col-3 */}
-<div className='w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
+<div className='w-[320px] lg:w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
@@ -221,7 +221,7 @@ const Card = () => {
 </div>
 
     {/* row 2 col-1 */}
-<div className='w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
+<div className='w-[320px] lg:w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
@@ -284,7 +284,7 @@ const Card = () => {
 </div>
 </div>
 {/* col-2 */}
-<div className='w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
+<div className='w-[320px] lg:w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
@@ -347,7 +347,7 @@ const Card = () => {
 </div>
 </div>
 {/* col-3 */}
-<div className='w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
+<div className='w-[320px] lg:w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
@@ -410,7 +410,7 @@ const Card = () => {
 </div>
 </div>
  {/* row 3 col-1 */}
-<div className='w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
+<div className='w-[320px] lg:w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
@@ -473,7 +473,7 @@ const Card = () => {
 </div>
 </div>
 {/* col-2 */}
-<div className='w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
+<div className='w-[320px] lg:w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
@@ -536,7 +536,7 @@ const Card = () => {
 </div>
 </div>
 {/* col-3 */}
-<div className='w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
+<div className='w-[320px] lg:w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
