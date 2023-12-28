@@ -1,20 +1,16 @@
 import React from 'react';
+import authorImage from '../../../../public/image/userImage.png'
+import profileImage from '../../../../public/image/profile.svg'
+import galleryImage from '../../../../public/image/gallery.svg'
+import profile2Image from '../../../../public/image/profile-2user.svg'
+import tagImage from '../../../../public/image/tag-user.svg'
+
 
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-[#9908F5] h-[91px] ">
+            <div className="navbar md:w-2/3 lg:w-[1200px]  bg-[#9908F5] h-[91px] ">
   <div className="navbar-start">
-    {/* <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-      </div>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Homepage</a></li>
-        <li><a>Portfolio</a></li>
-        <li><a>About</a></li>
-      </ul>
-    </div> */}
     <svg xmlns="http://www.w3.org/2000/svg" width="173" height="44" viewBox="0 0 173 44" fill="none" className='px-5'>
   <g clipPath="url(#clip0_736_5752)">
     <path d="M1.94692 8.80027C1.94692 8.16745 1.91457 7.66443 1.84448 7.29123C1.77438 6.91803 1.67733 6.62596 1.54792 6.41502C1.41851 6.20408 1.26215 6.06345 1.07343 5.99314C0.884712 5.92282 0.663643 5.89037 0.410223 5.89037C0.17837 5.89037 0.0435715 5.76597 0.00582804 5.52258C-0.0319155 5.27919 0.119059 5.15479 0.442574 5.15479H9.12897C10.4608 5.15479 11.5661 5.36573 12.4558 5.78761C13.3455 6.20949 14.0194 6.73954 14.4885 7.38318C14.9576 8.02682 15.2218 8.72455 15.2919 9.47095C15.362 10.2228 15.238 10.9313 14.9253 11.5966C14.6072 12.2619 14.1111 12.8406 13.4371 13.3166C12.7577 13.7979 11.9058 14.0738 10.8813 14.1441C12.1646 14.2144 13.2214 14.5497 14.0518 15.1447C14.8822 15.7397 15.4753 16.4807 15.8365 17.3569C16.1978 18.2331 16.338 19.1742 16.2571 20.1694C16.1762 21.1646 15.8527 22.0841 15.2919 22.9279C14.7312 23.7716 13.944 24.4748 12.9303 25.0373C11.9166 25.5998 10.6603 25.881 9.16671 25.881H0.442574C0.113667 25.881 -0.0319155 25.7566 0.00582804 25.5132C0.0435715 25.2698 0.172978 25.1454 0.410223 25.1454C0.669035 25.1454 0.890104 25.1184 1.07343 25.0589C1.26215 24.9994 1.41851 24.8696 1.54792 24.6749C1.67733 24.4748 1.77438 24.1881 1.84448 23.8149C1.91457 23.4417 1.94692 22.9387 1.94692 22.3059V8.80027ZM7.83491 13.8953C8.53586 13.8953 9.12358 13.6952 9.60346 13.3003C10.0833 12.9001 10.45 12.4133 10.7088 11.8237C10.9676 11.2396 11.097 10.596 11.1132 9.89283C11.124 9.1897 11.0161 8.54606 10.7789 7.96192C10.547 7.37777 10.1858 6.88558 9.69512 6.48533C9.20446 6.08509 8.58438 5.89037 7.8403 5.89037H6.15802V13.9007H7.83491V13.8953ZM6.15263 25.1725H7.69472C8.69761 25.1725 9.52797 24.9129 10.1804 24.399C10.8328 23.8852 11.3181 23.2362 11.6362 22.4519C11.9489 21.6676 12.1053 20.8185 12.0891 19.9044C12.0784 18.9903 11.9004 18.1411 11.5661 17.3569C11.2264 16.5726 10.7358 15.9236 10.0941 15.4097C9.45248 14.8959 8.65448 14.6363 7.69472 14.6363H6.15263V25.1725Z" fill="white"/>
@@ -78,7 +74,7 @@ const Navbar = () => {
 </svg>
   </div>
  
-  <div className="navbar-end">
+  <div className="lg:navbar-end ">
     <button className="btn btn-ghost btn-circle">
       <div className="indicator h-[50px] w-[50px] bg-[#FFFFFF] rounded-full p-3.5 ">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className='  '>
@@ -88,16 +84,16 @@ const Navbar = () => {
       </div>
     </button>
     <div className="btn btn-ghost btn-circle avatar  mx-3.5">
-        <div className="w-10 rounded-full ">
-          <img alt="UserImage" src="./../../../../public/image/userImage.png"  className='w-[117px] h-[78px] '/>
+        <div className=" rounded-full ">
+          <img alt="UserImage" src={authorImage}  className='w-[117px] h-[78px]  '/>
         </div>
   </div>
 </div>
         </div>
-        <div className='bg-[#F5F5F5] h-[110px] '>
-    <div className='flex '>
+        <div className='bg-[#F5F5F5] h-auto lg:h-[110px] w-auto mx-auto  md:w-2/3 md:mx-0 lg:lg:w-[1200px] '>
+    <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 w-0 mx-0 lg:w-[1000px] lg:mx-auto'>
         {/* dashboard */}
-        <div className='w-[156px] h-[50px]  rounded-lg bg-[#FFFFFF] mr-[30px]   ml-[115px] flex my-[30px]'>
+        <div className='w-[156px] h-[50px]  rounded-lg bg-[#FFFFFF] mr-[30px]  flex my-[30px]'>
                      <div className='flex py-3 px-5 gap-2'>
                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 <path d="M22 8.27V4.23C22 2.64 21.36 2 19.77 2H15.73C14.14 2 13.5 2.64 13.5 4.23V8.27C13.5 9.86 14.14 10.5 15.73 10.5H19.77C21.36 10.5 22 9.86 22 8.27ZM10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.93 10.5 8.52ZM10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z" stroke="black" strokeOpacity="0.9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -109,9 +105,9 @@ const Navbar = () => {
                 </div>
 
         {/* Profile */}
-        <div className='w-[156px] h-[50px] rounded-lg bg-[#FFFFFF] mr-[30px] flex my-[30px]'>
+        <div className='w-[156px] h-[50px] rounded-lg bg-[#FFFFFF]  flex my-[30px]'>
             <div className='flex py-3 px-5 gap-2 items-center justify-center'>
-                <img src='../../../../public/image/profile.svg' className='w-[24px] h-[24px]' alt='Profile Icon'></img>
+                <img src={profileImage} className='w-[24px] h-[24px]' alt='Profile Icon'></img>
                 <h3 className='text-xs font-medium leading-4 w-[77px] h-[16px]'>My Profile</h3>
             </div>
         </div>
@@ -119,7 +115,7 @@ const Navbar = () => {
         {/* Photos */}
         <div className='w-[156px] h-[50px] rounded-lg bg-[#FFFFFF] mr-[30px] flex my-[30px]'>
             <div className='flex py-3 px-5 gap-2 items-center justify-center'>
-                <img src='../../../../public/image/gallery.svg' className='w-[24px] h-[24px]' alt='Gallery Icon'></img>
+                <img src={galleryImage} className='w-[24px] h-[24px]' alt='Gallery Icon'></img>
                 <h3 className='text-xs font-medium leading-4 w-[81px] h-[16px]'>My Photos</h3>
             </div>
         </div>
@@ -127,7 +123,7 @@ const Navbar = () => {
         {/* Matches */}
         <div className='w-[156px] h-[50px] rounded-lg bg-[#FFFFFF] mr-[30px] flex my-[30px]'>
             <div className='flex py-3 px-5 gap-2 items-center justify-center'>
-                <img src='../../../../public/image/profile-2user.svg' className='w-[24px] h-[24px]' alt='Matches Icon'></img>
+                <img src={profile2Image} className='w-[24px] h-[24px]' alt='Matches Icon'></img>
                 <h3 className='text-xs font-medium leading-4 w-[94px] h-[16px]'>My Matches</h3>
             </div>
         </div>
@@ -135,7 +131,7 @@ const Navbar = () => {
         {/* Partner Preference */}
         <div className='w-[170px] h-[50px] rounded-lg bg-[#FFFFFF] flex my-[30px]'>
             <div className='flex py-3 px-5 gap-2 items-center justify-center '>
-                <img src='../../../../public/image/tag-user.svg' className='w-[24px] h-[24px]' alt='Partner Preference Icon'></img>
+                <img src={tagImage} className='w-[24px] h-[24px]' alt='Partner Preference Icon'></img>
                 <h3 className='text-xs font-medium leading-4 w-[154px] h-[16px]'>Partner Preference</h3>
             </div>
         </div>

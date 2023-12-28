@@ -9,7 +9,7 @@ import {
 import router from './Router/Router.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className=' w-[1200px] mx-auto'>
+    <div className='w-auto  lg:w-[1200px] mx-auto'>
 
      <RouterProvider router={router} />
     </div>

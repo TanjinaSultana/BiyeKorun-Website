@@ -1,35 +1,41 @@
 import React from 'react';
-
+import searchImage from '../../../../public/image/searchnormal1.svg'
+import heartImage from '../../../../public/image/heart.svg'
+import cardImage from '../../../../public/image/cardImage.png'
+import messageImage from '../../../../public/image/messages-2.svg'
+import starImage from '../../../../public/image/star 1.svg'
+import horizontalImage from '../../../../public/image/horizontal.svg'
+import ellipseImage from '../../../../public/image/Ellipse 1966.svg'
 const Card = () => {
     return (
-        <div className='w-[1180px] mx-auto h-full lg:h-[874px] bg-[#F5F5F5] mt-[30px] flex '>
+        <div className='w-auto md:w-2/3 md:mx-0 mx-auto lg:w-[1180px] mx-auto h-full lg:h-[874px] bg-[#F5F5F5] mt-[30px] flex '>
         <div className='m-[30px] '>
             {/* subheader and search option */}
-        <div className='flex w-[1120px]  justify-between'>
+        <div className='flex flex-col lg:flex-row w-[1120px]  justify-between'>
   <div className='justify-start'>
     <h1 className='font-medium text-sm text-[#F42A41]'>Discover</h1>
     <h1 className='font-semibold text-base mt-[18px]'>Potential Partner</h1>
   </div>
 
-  <div className="form-control justify-center lg:justify-end">
-    <input type="text" className="input w-[282px] h-[50px] rounded-lg bg-[#FFFFFF] w-24 md:w-auto" />
+  <div className="form-control lg:justify-end lg:mt-0 mt-2">
+    <input type="text" className="input w-[282px] h-[50px] rounded-lg bg-[#FFFFFF] w-24 " />
     <div>
-      <img src="../../../../public/image/searchnormal1.svg" className='w-[20px] h-[20px] -mt-8 m-[15px]' alt='Search Icon' />
+      <img src={searchImage} className='w-[20px] h-[20px] -mt-8 m-[15px]' alt='Search Icon' />
       <h4 className='text-xs font-medium text-[#00000080] -mt-8 ml-[47px] my-[17px]'>Search</h4>
     </div>
   </div>
 </div>
 {/* card  */}
-<div className=''>
 
+
+<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3  mt-[15px]'>
 {/* row-1 */}
-<div className='grid grid-cols-2 lg:grid-cols-3  mt-[15px]'>
     {/* col-1 */}
 <div className='w-[353px] h-[219px] bg-[#FFFFFF] rounded-lg mt-5'>
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
-        <img src='../../../../public/image/cardImage.png' className='w-[50px] h-[50px] rounded-full '></img>
+        <img src={cardImage} className='w-[50px] h-[50px] rounded-full '></img>
     </div>
     <div >
         <div className='flex mr-32 gap-2'>
@@ -42,13 +48,13 @@ const Card = () => {
         <div className='flex'>
 
         <p className='text-[#666666] text-sm font-normal '>Islam </p>
-        <img src='../../../../public/image/Ellipse 1966.svg' className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
+        <img src={ellipseImage} className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
         <p className='text-[#666666] text-sm font-normal '> Dhaka, Bangladesh</p>
         </div>
     </div>
     <div className='justify-end'>
 
-        <img src='../../../../public/image/horizontal.svg'></img>
+        <img src={horizontalImage}></img>
     </div>
     </div>
   
@@ -63,21 +69,21 @@ const Card = () => {
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/heart.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={heartImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* message icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/messages-2.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={messageImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* star icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/star 1.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={starImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
     </div>
 {/* request button */}
@@ -92,7 +98,7 @@ const Card = () => {
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
-        <img src='../../../../public/image/cardImage.png' className='w-[50px] h-[50px] rounded-full '></img>
+        <img src={cardImage} className='w-[50px] h-[50px] rounded-full '></img>
     </div>
     <div >
         <div className='flex mr-32 gap-2'>
@@ -105,13 +111,13 @@ const Card = () => {
         <div className='flex'>
 
         <p className='text-[#666666] text-sm font-normal '>Islam </p>
-        <img src='../../../../public/image/Ellipse 1966.svg' className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
+        <img src={ellipseImage} className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
         <p className='text-[#666666] text-sm font-normal '> Dhaka, Bangladesh</p>
         </div>
     </div>
     <div className='justify-end'>
 
-        <img src='../../../../public/image/horizontal.svg'></img>
+        <img src={horizontalImage}></img>
     </div>
     </div>
   
@@ -126,21 +132,21 @@ const Card = () => {
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/heart.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={heartImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* message icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/messages-2.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={messageImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* star icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/star 1.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={starImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
     </div>
 {/* request button */}
@@ -155,7 +161,7 @@ const Card = () => {
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
-        <img src='../../../../public/image/cardImage.png' className='w-[50px] h-[50px] rounded-full '></img>
+        <img src={cardImage} className='w-[50px] h-[50px] rounded-full '></img>
     </div>
     <div >
         <div className='flex mr-32 gap-2'>
@@ -168,13 +174,13 @@ const Card = () => {
         <div className='flex'>
 
         <p className='text-[#666666] text-sm font-normal '>Islam </p>
-        <img src='../../../../public/image/Ellipse 1966.svg' className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
+        <img src={ellipseImage} className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
         <p className='text-[#666666] text-sm font-normal '> Dhaka, Bangladesh</p>
         </div>
     </div>
     <div className='justify-end'>
 
-        <img src='../../../../public/image/horizontal.svg'></img>
+        <img src={horizontalImage}></img>
     </div>
     </div>
   
@@ -189,21 +195,21 @@ const Card = () => {
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/heart.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={heartImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* message icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/messages-2.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={messageImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* star icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/star 1.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={starImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
     </div>
 {/* request button */}
@@ -219,7 +225,7 @@ const Card = () => {
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
-        <img src='../../../../public/image/cardImage.png' className='w-[50px] h-[50px] rounded-full '></img>
+        <img src={cardImage} className='w-[50px] h-[50px] rounded-full '></img>
     </div>
     <div >
         <div className='flex mr-32 gap-2'>
@@ -232,13 +238,13 @@ const Card = () => {
         <div className='flex'>
 
         <p className='text-[#666666] text-sm font-normal '>Islam </p>
-        <img src='../../../../public/image/Ellipse 1966.svg' className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
+        <img src={ellipseImage} className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
         <p className='text-[#666666] text-sm font-normal '> Dhaka, Bangladesh</p>
         </div>
     </div>
     <div className='justify-end'>
 
-        <img src='../../../../public/image/horizontal.svg'></img>
+        <img src={horizontalImage}></img>
     </div>
     </div>
   
@@ -253,21 +259,21 @@ const Card = () => {
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/heart.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={heartImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* message icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/messages-2.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={messageImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* star icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/star 1.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={starImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
     </div>
 {/* request button */}
@@ -282,7 +288,7 @@ const Card = () => {
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
-        <img src='../../../../public/image/cardImage.png' className='w-[50px] h-[50px] rounded-full '></img>
+        <img src={cardImage} className='w-[50px] h-[50px] rounded-full '></img>
     </div>
     <div >
         <div className='flex mr-32 gap-2'>
@@ -295,13 +301,13 @@ const Card = () => {
         <div className='flex'>
 
         <p className='text-[#666666] text-sm font-normal '>Islam </p>
-        <img src='../../../../public/image/Ellipse 1966.svg' className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
+        <img src={ellipseImage} className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
         <p className='text-[#666666] text-sm font-normal '> Dhaka, Bangladesh</p>
         </div>
     </div>
     <div className='justify-end'>
 
-        <img src='../../../../public/image/horizontal.svg'></img>
+        <img src={horizontalImage}></img>
     </div>
     </div>
   
@@ -316,21 +322,21 @@ const Card = () => {
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/heart.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={heartImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* message icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/messages-2.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={messageImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* star icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/star 1.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={starImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
     </div>
 {/* request button */}
@@ -345,7 +351,7 @@ const Card = () => {
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
-        <img src='../../../../public/image/cardImage.png' className='w-[50px] h-[50px] rounded-full '></img>
+        <img src={cardImage} className='w-[50px] h-[50px] rounded-full '></img>
     </div>
     <div >
         <div className='flex mr-32 gap-2'>
@@ -358,13 +364,13 @@ const Card = () => {
         <div className='flex'>
 
         <p className='text-[#666666] text-sm font-normal '>Islam </p>
-        <img src='../../../../public/image/Ellipse 1966.svg' className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
+        <img src={ellipseImage} className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
         <p className='text-[#666666] text-sm font-normal '> Dhaka, Bangladesh</p>
         </div>
     </div>
     <div className='justify-end'>
 
-        <img src='../../../../public/image/horizontal.svg'></img>
+        <img src={horizontalImage}></img>
     </div>
     </div>
   
@@ -379,21 +385,21 @@ const Card = () => {
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/heart.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={heartImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* message icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/messages-2.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={messageImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* star icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/star 1.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={starImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
     </div>
 {/* request button */}
@@ -408,7 +414,7 @@ const Card = () => {
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
-        <img src='../../../../public/image/cardImage.png' className='w-[50px] h-[50px] rounded-full '></img>
+        <img src={cardImage} className='w-[50px] h-[50px] rounded-full '></img>
     </div>
     <div >
         <div className='flex mr-32 gap-2'>
@@ -421,13 +427,13 @@ const Card = () => {
         <div className='flex'>
 
         <p className='text-[#666666] text-sm font-normal '>Islam </p>
-        <img src='../../../../public/image/Ellipse 1966.svg' className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
+        <img src={ellipseImage} className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
         <p className='text-[#666666] text-sm font-normal '> Dhaka, Bangladesh</p>
         </div>
     </div>
     <div className='justify-end'>
 
-        <img src='../../../../public/image/horizontal.svg'></img>
+        <img src={horizontalImage}></img>
     </div>
     </div>
   
@@ -442,21 +448,21 @@ const Card = () => {
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/heart.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={heartImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* message icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/messages-2.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={messageImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* star icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/star 1.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={starImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
     </div>
 {/* request button */}
@@ -471,7 +477,7 @@ const Card = () => {
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
-        <img src='../../../../public/image/cardImage.png' className='w-[50px] h-[50px] rounded-full '></img>
+        <img src={cardImage} className='w-[50px] h-[50px] rounded-full '></img>
     </div>
     <div >
         <div className='flex mr-32 gap-2'>
@@ -484,13 +490,13 @@ const Card = () => {
         <div className='flex'>
 
         <p className='text-[#666666] text-sm font-normal '>Islam </p>
-        <img src='../../../../public/image/Ellipse 1966.svg' className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
+        <img src={ellipseImage} className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
         <p className='text-[#666666] text-sm font-normal '> Dhaka, Bangladesh</p>
         </div>
     </div>
     <div className='justify-end'>
 
-        <img src='../../../../public/image/horizontal.svg'></img>
+        <img src={horizontalImage}></img>
     </div>
     </div>
   
@@ -505,21 +511,21 @@ const Card = () => {
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/heart.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={heartImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* message icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/messages-2.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={messageImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* star icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/star 1.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={starImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
     </div>
 {/* request button */}
@@ -534,7 +540,7 @@ const Card = () => {
     <div className='flex p-5 justify-between'>
 
     <div className=' justify-start'>
-        <img src='../../../../public/image/cardImage.png' className='w-[50px] h-[50px] rounded-full '></img>
+        <img src={cardImage} className='w-[50px] h-[50px] rounded-full '></img>
     </div>
     <div >
         <div className='flex mr-32 gap-2'>
@@ -547,13 +553,13 @@ const Card = () => {
         <div className='flex'>
 
         <p className='text-[#666666] text-sm font-normal '>Islam </p>
-        <img src='../../../../public/image/Ellipse 1966.svg' className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
+        <img src={ellipseImage} className='w-[5px] h-[5px] mt-2 mx-[3px]'></img>  
         <p className='text-[#666666] text-sm font-normal '> Dhaka, Bangladesh</p>
         </div>
     </div>
     <div className='justify-end'>
 
-        <img src='../../../../public/image/horizontal.svg'></img>
+        <img src={horizontalImage}></img>
     </div>
     </div>
   
@@ -568,21 +574,21 @@ const Card = () => {
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/heart.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={heartImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* message icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/messages-2.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={messageImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
 {/* star icon */}
 <div  className=''>
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="20" fill="#FEEAEC"/>
 </svg>
-    <img src='../../../../public/image/star 1.svg' className='w-[23px] h-[23px] -mt-8 mx-2'></img>
+    <img src={starImage} className='w-[23px] h-[23px] -mt-8 mx-2'></img>
 </div>
     </div>
 {/* request button */}
@@ -593,7 +599,7 @@ const Card = () => {
 </div>
 </div>
 
-</div>
+
 
 
 </div>
